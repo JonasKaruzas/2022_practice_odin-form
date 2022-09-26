@@ -4,14 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello from starter-kit!</title>
-
+    <title>Form</title>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
   <body>
-    <h1>Hello from starter-kit!</h1>
+    <div class="wrapper">
+      <div class="left">
+        <div class="logo-container">
+          <img
+            class="logo-img"
+            src="./img/odin-lined.png"
+            alt="odin head picture"
+          />
+          <div class="logo-text">ODIN</div>
+        </div>
+        <div class="img-credits">
+          Photo by
+          <a href="https://unsplash.com/photos/25xggax4bSA">Halle West</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you organize your deepest dreams.<br />Sign
+            up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+          <div class="bottom">
+            <form>
+              <div class="form_bg">
+                <p>Let's do this!</p>
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" id="firstName" />
+                <label for="lastName">Last name</label>
+                <input type="text" name="lastName" id="lastName" />
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" />
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+                <label for="passwordConfirm">Confirm password</label>
+                <input
+                  type="password"
+                  name="passwordConfirm"
+                  id="passwordConfirm"
+                />
+              </div>
+              <button type="submit">Create Account</button>
+            </form>
+            <h5>Already have an account? <a href="#">Log in</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-
-  <script src="./script.js"></script>
 </html>
