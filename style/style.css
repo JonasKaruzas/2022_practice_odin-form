@@ -1,1 +1,127 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Norse";
+  src: url("./../font/Norse-Bold.otf");
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.wrapper .left {
+  flex: 1;
+  background: url("./../img/form_bg.avif");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .left .logo-container {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.wrapper .left .logo-container .logo-img {
+  height: 100px;
+}
+.wrapper .left .logo-container .logo-text {
+  color: #ffffff;
+  font-family: Norse, "Times New Roman", Times, serif;
+  font-size: 80px;
+}
+.wrapper .left .img-credits {
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.wrapper .left .img-credits a {
+  color: #ffffff;
+}
+.wrapper .right {
+  flex: 2;
+  background-color: #f9fafc;
+}
+.wrapper .right .top {
+  padding-left: 40px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.wrapper .right .top p {
+  font-weight: 700;
+  font-size: 20px;
+  max-width: 620px;
+}
+.wrapper .right .bottom form .form_bg {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .right .bottom form .form_bg p {
+  width: 100%;
+}
+.wrapper .right .bottom form .form_bg .container {
+  display: flex;
+  gap: 60px;
+}
+.wrapper .right .bottom form .form_bg .container label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+.wrapper .right .bottom form .form_bg .container input {
+  margin-bottom: 20px;
+  width: 220px;
+  padding: 5px;
+  font-weight: 700;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.wrapper .right .bottom form .form_bg .container .form_left {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .right .bottom form .form_bg .container .form_right {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .right .bottom form p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.wrapper .right button {
+  margin-top: 30px;
+  margin-left: 40px;
+  background-color: #596d48;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  cursor: pointer;
+}
+.wrapper .right h5 {
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.wrapper .right h5 a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */

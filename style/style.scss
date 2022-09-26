@@ -1,1 +1,156 @@
-// Write your styles
+@font-face {
+  font-family: "Norse";
+  src: url("./../font/Norse-Bold.otf");
+}
+
+$base-margin: 40px;
+$base-white: #ffffff;
+$base-green: #596d48;
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+
+  .left {
+    flex: 1;
+    background: url("./../img/form_bg.avif");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo-container {
+      margin-top: 150px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      .logo-img {
+        height: 100px;
+      }
+
+      .logo-text {
+        color: $base-white;
+        font-family: Norse, "Times New Roman", Times, serif;
+        font-size: 80px;
+      }
+    }
+
+    .img-credits {
+      color: $base-white;
+      font-size: 12px;
+      opacity: 0.7;
+      text-align: center;
+      margin-bottom: 10px;
+
+      a {
+        color: $base-white;
+      }
+    }
+  }
+
+  .right {
+    flex: 2;
+    background-color: #f9fafc;
+
+    .top {
+      padding-left: $base-margin;
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        max-width: 620px;
+      }
+    }
+
+    .bottom {
+      form {
+        .form_bg {
+          padding-left: $base-margin;
+          padding-bottom: 20px;
+          background-color: $base-white;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            width: 100%;
+          }
+
+          .container {
+            display: flex;
+            gap: 60px;
+
+            label {
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 11px;
+              font-weight: 600;
+              opacity: 0.7;
+              margin-bottom: 2px;
+            }
+
+            input {
+              margin-bottom: 20px;
+              width: 220px;
+              padding: 5px;
+              font-weight: 700;
+              border: 1px solid lightgray;
+              border-radius: 5px;
+            }
+
+            .form_left {
+              display: flex;
+              flex-direction: column;
+            }
+
+            .form_right {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+
+        p {
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 30px;
+      margin-left: $base-margin;
+      background-color: $base-green;
+      color: $base-white;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+      cursor: pointer;
+    }
+
+    h5 {
+      padding-left: $base-margin;
+      font-size: 14px;
+      font-weight: 400;
+
+      a {
+        color: $base-green;
+        text-decoration: none;
+        font-weight: 800;
+      }
+    }
+  }
+}
