@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
@@ -36,7 +36,7 @@
           <p>You <em>know</em> you want to.</p>
         </div>
         <div class="bottom">
-          <form>
+          <form id="createAccountForm">
             <div class="form_bg">
               <p>Let's do this!</p>
               <div class="container">
@@ -65,6 +65,7 @@
                     required
                     tabindex="5"
                   />
+                  <div id="password-error">* Passwords do not match</div>
                 </div>
                 <div class="form_right">
                   <label for="lastName">Last name</label>
@@ -80,9 +81,9 @@
                     type="tel"
                     name="phoneNumber"
                     id="phoneNumber"
-                    pattern="\d"
+                    pattern="[8]{1}[0-9]{3}[0-9]{5}"
                     required
-                    placeholder="8600123456"
+                    placeholder="860012345"
                     tabindex="4"
                   />
                   <label for="passwordConfirm">Confirm password</label>

@@ -118,9 +118,18 @@ body {
               }
             }
 
+            #password-error {
+              display: none;
+              font-size: 10px;
+              color: red;
+              position: absolute;
+              bottom: 5px;
+            }
+
             .form_left {
               display: flex;
               flex-direction: column;
+              position: relative;
             }
 
             .form_right {
@@ -160,6 +169,71 @@ body {
         color: $base-green;
         text-decoration: none;
         font-weight: 800;
+      }
+    }
+  }
+}
+
+.error {
+  outline: 1px solid red;
+}
+
+@media screen and (max-width: "970px") {
+  .wrapper {
+    flex-direction: column;
+    height: 200px;
+
+    .left {
+      .logo-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "650px") {
+  .wrapper {
+    .right {
+      .top {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: $base-margin;
+
+        p {
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+
+        form {
+          p {
+            text-align: center;
+          }
+
+          .form_bg {
+            align-items: center;
+            padding: 0;
+
+            .container {
+              flex-direction: column;
+              gap: 0;
+            }
+          }
+
+          button {
+            margin-left: calc(50vw / 2);
+          }
+        }
+      }
+
+      h5 {
+        text-align: center;
+        padding: 0;
       }
     }
   }

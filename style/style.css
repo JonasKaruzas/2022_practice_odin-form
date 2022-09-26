@@ -104,9 +104,17 @@ body {
 .wrapper .right .bottom form .form_bg .container input::placeholder {
   opacity: 0.5;
 }
+.wrapper .right .bottom form .form_bg .container #password-error {
+  display: none;
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  bottom: 5px;
+}
 .wrapper .right .bottom form .form_bg .container .form_left {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .wrapper .right .bottom form .form_bg .container .form_right {
   display: flex;
@@ -138,4 +146,52 @@ body {
   color: #596d48;
   text-decoration: none;
   font-weight: 800;
+}
+
+.error {
+  outline: 1px solid red;
+}
+
+@media screen and (max-width: 970px) {
+  .wrapper {
+    flex-direction: column;
+    height: 200px;
+  }
+  .wrapper .left .logo-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper .right .top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+  }
+  .wrapper .right .top p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .wrapper .right .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper .right .bottom form p {
+    text-align: center;
+  }
+  .wrapper .right .bottom form .form_bg {
+    align-items: center;
+    padding: 0;
+  }
+  .wrapper .right .bottom form .form_bg .container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .wrapper .right .bottom form button {
+    margin-left: 25vw;
+  }
+  .wrapper .right h5 {
+    text-align: center;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
