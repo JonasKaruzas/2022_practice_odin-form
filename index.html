@@ -42,29 +42,63 @@
               <div class="container">
                 <div class="form_left">
                   <label for="firstName">First name</label>
-                  <input type="text" name="firstName" id="firstName" />
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    required
+                    tabindex="1"
+                  />
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    tabindex="3"
+                  />
                   <label for="password">Password</label>
-                  <input type="password" name="password" id="password" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    tabindex="5"
+                  />
                 </div>
                 <div class="form_right">
                   <label for="lastName">Last name</label>
-                  <input type="text" name="lastName" id="lastName" />
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    required
+                    tabindex="2"
+                  />
                   <label for="phoneNumber">Phone number</label>
-                  <input type="tel" name="phoneNumber" id="phoneNumber" />
+                  <input
+                    type="tel"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    pattern="\d"
+                    required
+                    placeholder="8600123456"
+                    tabindex="4"
+                  />
                   <label for="passwordConfirm">Confirm password</label>
                   <input
                     type="password"
                     name="passwordConfirm"
                     id="passwordConfirm"
+                    required
+                    tabindex="6"
                   />
                 </div>
               </div>
             </div>
-            <button type="submit">Create Account</button>
+            <button type="submit" tabindex="7">Create Account</button>
           </form>
-          <h5>Already have an account? <a href="#">Log in</a></h5>
+          <h5>Already have an account? <a href="#" tabindex="8">Log in</a></h5>
         </div>
       </div>
     </div>
